@@ -860,6 +860,6 @@ asmlinkage long sys_process_vm_writev(pid_t pid,
 /**
  * My own syscall helloworld
  */
- asmlinkage long sys_helloworld(void);
+ asmlinkage long print_map(long my_pid);
  
 #endif
