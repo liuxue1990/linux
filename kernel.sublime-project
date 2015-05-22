@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [".*", "arch/alpha","arch/avr32", 
+										"arch/blackfin", "arch/c6x", "arch/cris", 
+										"arch/frv", "arch/h8300", "arch/hexagon", 
+										"arch/ia64", "arch/m32r", "arch/m68k", 
+										"arch/microblaze", "arch/mips", "arch/mn10300", 
+										"arch/openrisc", "arch/parisc", "arch/s390", 
+										"arch/score", "arch/sh", "arch/sparc", 
+										"arch/tile", "arch/unicore32", "arch/xtensa"],
+			"file_exclude_patterns": [".*"]
+		},
+	]
+}

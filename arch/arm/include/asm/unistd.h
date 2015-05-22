@@ -84,7 +84,8 @@
 					/* 56 was sys_mpx */
 #define __NR_setpgid			(__NR_SYSCALL_BASE+ 57)
 					/* 58 was sys_ulimit */
-					/* 59 was sys_olduname */
+
+#define __NR_helloworld		(__NR_SYSCALL_BASE+ 59)	 /* 59 was sys_olduname, now is my syscall */
 #define __NR_umask			(__NR_SYSCALL_BASE+ 60)
 #define __NR_chroot			(__NR_SYSCALL_BASE+ 61)
 #define __NR_ustat			(__NR_SYSCALL_BASE+ 62)
@@ -404,6 +405,7 @@
 #define __NR_setns			(__NR_SYSCALL_BASE+375)
 #define __NR_process_vm_readv		(__NR_SYSCALL_BASE+376)
 #define __NR_process_vm_writev		(__NR_SYSCALL_BASE+377)
+
 
 /*
  * The following SWIs are ARM private.

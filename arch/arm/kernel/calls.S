@@ -68,7 +68,7 @@
 		CALL(sys_ni_syscall)		/* was sys_mpx */
 		CALL(sys_setpgid)
 		CALL(sys_ni_syscall)		/* was sys_ulimit */
-		CALL(sys_ni_syscall)		/* was sys_olduname */
+		CALL(sys_helloworld)		/* was sys_olduname, now is my own syscall */
 /* 60 */	CALL(sys_umask)
 		CALL(sys_chroot)
 		CALL(sys_ustat)
