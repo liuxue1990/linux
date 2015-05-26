@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"vm",
+				"vm_start"
+			],
+			[
+				"vm_",
+				"vm_end"
+			],
+			[
+				"pte",
+				"pte_table_base"
+			],
+			[
+				"is",
+				"is_in_pte_table"
+			],
+			[
+				"pte_ta",
+				"pte_table_entry"
+			],
+			[
+				"PTE",
+				"PTE_TABLE_SIZE"
+			],
+			[
+				"pg",
+				"pgd_offset"
+			],
+			[
+				"pgd",
+				"pgd_index"
+			],
+			[
+				"mm",
+				"mm_struct"
+			],
+			[
+				"print_p",
+				"print_pte_table"
+			],
+			[
+				"pdg",
+				"pgd_t"
+			],
+			[
+				"M",
+				"MAX_FILE_PATH_LEN"
+			],
+			[
+				"de",
+				"dentry"
+			],
+			[
+				"vm_f",
+				"vm_file"
+			],
+			[
+				"print_vm",
+				"print_vm_file"
+			],
+			[
+				"starc",
+				"start_stack"
+			],
+			[
+				"pri",
+				"printk"
+			],
+			[
+				"my",
+				"my_mm"
+			],
+			[
+				"my_",
+				"my_mm"
+			],
+			[
+				"print",
+				"print_vm_area_struct"
+			],
+			[
+				"pr",
+				"printk"
+			],
+			[
 				"cpp",
 				"cpp_args"
 			],
@@ -16,34 +100,74 @@
 	"buffers":
 	[
 		{
-			"file": "arch/arm/kernel/calls.S",
+			"file": "arch/arm/kernel/sys_print_map.c",
 			"settings":
 			{
-				"buffer_size": 10905,
+				"buffer_size": 7542,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "arch/arm/kernel/Makefile",
+			"file": "arch/arm/include/asm/pgtable-2level-types.h",
 			"settings":
 			{
-				"buffer_size": 2679,
+				"buffer_size": 1883,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "arch/arm/include/asm/unistd.h",
+			"file": "include/linux/mm.h",
 			"settings":
 			{
-				"buffer_size": 20736,
+				"buffer_size": 56231,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "include/linux/syscalls.h",
+			"file": "mm/memory.c",
 			"settings":
 			{
-				"buffer_size": 38421,
+				"buffer_size": 110525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "arch/arm/include/asm/memory.h",
+			"settings":
+			{
+				"buffer_size": 7692,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "arch/arm/include/asm/pgtable-2level.h",
+			"settings":
+			{
+				"buffer_size": 6787,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "arch/arm/include/asm/pgtable.h",
+			"settings":
+			{
+				"buffer_size": 10604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "arch/arm/include/asm/page.h",
+			"settings":
+			{
+				"buffer_size": 3773,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/asm-generic/page.h",
+			"settings":
+			{
+				"buffer_size": 2525,
 				"line_ending": "Unix"
 			}
 		}
@@ -56,7 +180,7 @@
 	"command_palette":
 	{
 		"height": 67.0,
-		"last_filter": "install",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -93,20 +217,43 @@
 	},
 	"expanded_folders":
 	[
-		"/Volumes/android/linux",
 		"/Volumes/android/linux/arch",
-		"/Volumes/android/linux/arch/arm",
-		"/Volumes/android/linux/arch/arm/kernel",
+		"/Volumes/android/linux/arch/arm/include/asm",
+		"/Volumes/android/linux/include",
+		"/Volumes/android/linux/include/asm-generic",
 		"/Volumes/android/linux/include/linux"
 	],
 	"file_history":
 	[
+		"/Volumes/android/linux/fs/namei.c",
+		"/Volumes/android/linux/arch/arm/include/asm/page-nommu.h",
+		"/Volumes/android/linux/include/asm-generic/pgtable-nopud.h",
+		"/Volumes/android/linux/include/drm/drmP.h",
+		"/Volumes/android/linux/include/linux/types.h",
+		"/Volumes/android/linux/include/asm-generic/4level-fixup.h",
+		"/Volumes/android/linux/include/asm-generic/page.h",
+		"/Volumes/android/linux/include/linux/fs_struct.h",
+		"/Volumes/android/linux/include/asm-generic/pgtable-nopmd.h",
+		"/Volumes/android/linux/arch/arm/plat-omap/sram.c",
+		"/Volumes/android/linux/arch/arm/include/asm/pgtable-2level.h",
+		"/Volumes/android/linux/include/linux/mm.h",
+		"/Volumes/android/linux/include/linux/sched.h",
+		"/Volumes/android/linux/include/linux/mm_types.h",
+		"/Volumes/android/linux/include/linux/dcache.h",
+		"/Volumes/android/linux/fs/dcache.c",
+		"/Volumes/android/linux/include/linux/pid.h",
+		"/Volumes/android/linux/include/linux/path.h",
+		"/Volumes/android/linux/include/asm-generic/posix_types.h",
+		"/Volumes/android/linux/include/linux/syscalls.h",
+		"/Volumes/android/linux/arch/arm/include/asm/unistd.h",
+		"/Volumes/android/linux/arch/arm/kernel/calls.S",
+		"/Volumes/android/linux/arch/arm/kernel/Makefile",
+		"/Volumes/android/linux/include/linux/list.h",
 		"/Volumes/android/linux/.git/COMMIT_EDITMSG",
 		"/Volumes/android/linux/arch/arm/kernel/sys_helloworld.c",
 		"/Volumes/android/linux/kernel/timer.c",
 		"/Volumes/android/linux/arch/x86/kernel/syscall_64.c",
 		"/Volumes/android/linux/kernel/signal.c",
-		"/Volumes/android/linux/include/linux/syscalls.h",
 		"/Volumes/android/linux/arch/cris/arch-v32/kernel/time.c",
 		"/Volumes/android/linux/kernel/exit.c",
 		"/Volumes/android/linux/arch/arm/lib/copy_to_user.S",
@@ -119,11 +266,9 @@
 		"/Volumes/android/linux/arch/sh/include/asm/syscalls_64.h",
 		"/Volumes/android/linux/arch/x86/kernel/asm-offsets_64.c",
 		"/Volumes/android/linux/kernel/uid16.c",
-		"/Volumes/android/linux/arch/arm/kernel/calls.S",
 		"/Volumes/android/linux/kernel.sublime-project",
 		"/Volumes/android/linux/arch/alpha/kernel/process.c",
 		"/Volumes/android/linux/arch/m32r/kernel/process.c",
-		"/Volumes/android/linux/include/linux/sched.h",
 		"/Volumes/android/linux/arch/cris/arch-v10/kernel/process.c",
 		"/Volumes/android/linux/arch/avr32/kernel/process.c",
 		"/Volumes/android/linux/drivers/infiniband/core/uverbs_main.c",
@@ -181,6 +326,16 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Volumes/android/linux/arch/arm/include,/Volumes/android/linux/include",
+			"/Volumes/android/linux",
+			"/Volumes/android/linux/arch/arm/include,/Volumes/android/linux/includefollow_page",
+			"/Volumes/android/linux/arch/arm/include,/Volumes/android/linux/include",
+			"/Volumes/android/linux",
+			"/Volumes/android/linux/arch/arm/include,/Volumes/android/linux/include",
+			"/Volumes/android/linux",
+			"/Volumes/android/linux/arch/arm/include,/Volumes/android/linux/include",
+			"/Volumes/android/linux/arch/arm/include,/Volumes/android/linux/inlucde",
+			"/Volumes/android/linux/arch/arm/include",
 			"/Volumes/android/linux",
 			"/Volumes/android/linux/arch/arm",
 			"/Volumes/android/linux/arch/x86",
@@ -206,6 +361,63 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"4",
+			"pte_table_entry",
+			"current_pte_table_entry",
+			"PTE",
+			"is_in_range",
+			"print_pgd",
+			"print_pte",
+			" ---",
+			"TRUE",
+			"pmdval_t",
+			"struct page",
+			"pgtable_t",
+			"struct page",
+			"follow_page",
+			"phys_to_virt",
+			"virt_to_phys",
+			"i",
+			"pmd_offset",
+			"__LINUX_ARM_ARCH__",
+			"PATH",
+			"path",
+			"PATH",
+			"path",
+			"dentry_path_raw",
+			"dentry_path",
+			"dentry_path_raw",
+			"struct dentry",
+			"path.h",
+			"path",
+			"struct path",
+			"user_ptrs_per_pgd",
+			"first_user_pgd",
+			"first_user_pgd_nr",
+			"ptrs_per_pgd",
+			"ptrs_per_pdg",
+			"pgd_t",
+			"\n\npgd_t",
+			"printk_address",
+			"user",
+			"find",
+			"mm_struct",
+			"break",
+			"printk",
+			");",
+			"VM_SHARED",
+			"			case 0x00000008:\n			printk(\"VM_SHARED|\");\n			break;",
+			"			case 0x00000008:\n			printk(\"VM_SHARED\");\n			break;",
+			"			case 0x00000002:\n			printk(\"VM_WRITE|\");\n			break;",
+			"pgprot_t",
+			"vm_page_prot",
+			"vm_area_struct",
+			"pid_namespace",
+			"find_task_by_vpid",
+			"task_struct",
+			"struct task_struct",
+			"my_task",
+			"list_entry",
 			"SYSCALL_DEFINE0",
 			"sys_kill",
 			"copy_to_user",
@@ -292,81 +504,81 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "arch/arm/kernel/calls.S",
+					"file": "arch/arm/kernel/sys_print_map.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10905,
+						"buffer_size": 7542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1406,
-								1414
+								5263,
+								5270
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage",
+							"syntax": "Packages/C++/C++.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "arch/arm/kernel/Makefile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2679,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								527,
-								527
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Makefile Improved/Makefile Improved.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 3158.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "arch/arm/include/asm/unistd.h",
+					"buffer": 1,
+					"file": "arch/arm/include/asm/pgtable-2level-types.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20736,
+						"buffer_size": 1883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3187,
-								3187
+								1036,
+								1041
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 107.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "include/linux/mm.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24060,
+								24064
 							]
 						],
 						"settings":
@@ -375,39 +587,182 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 945.0,
+						"translation.y": 8585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mm/memory.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 110525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40266,
+								40285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 20512.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "arch/arm/include/asm/memory.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5582,
+								5593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 23.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "arch/arm/include/asm/pgtable-2level.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6787,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3160,
+								3172
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 964.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "arch/arm/include/asm/pgtable.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7226,
+								7226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3365.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "arch/arm/include/asm/page.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2103,
+								2107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "include/linux/syscalls.h",
+					"buffer": 8,
+					"file": "include/asm-generic/page.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 38421,
+						"buffer_size": 2525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38413,
-								38413
+								1214,
+								1214
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 12162.0,
+						"translation.y": 94.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -461,6 +816,22 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"mm.h",
+				"include/linux/mm.h"
+			],
+			[
+				"mm_ty",
+				"include/linux/mm_types.h"
+			],
+			[
+				"shed.h",
+				"include/linux/sched.h"
+			],
+			[
+				"pid.h",
+				"include/linux/pid.h"
+			],
 			[
 				"/linux/syscall",
 				"include/linux/syscalls.h"

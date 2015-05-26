@@ -161,7 +161,7 @@ void print_vm_area_struct(struct vm_area_struct *mmap){
 	list_for_each_vm(p, mmap){
 		printk_address("",p->vm_start, p->vm_end);
 		// printk("%lu ", pgprot_val(p->vm_page_prot));
-		print_vm_file(p->vm_file);
+		// print_vm_file(p->vm_file);
 		print_vm_flag(p->vm_flags);
 	}
 }
@@ -322,7 +322,7 @@ SYSCALL_DEFINE1(print_map, long, my_pid){
 	}
 	printk("%s[%d]\n", my_task->comm, my_task->pid);
 	print_mm_struct(my_mm);
-	print_vm_area_struct(my_mm->mmap);
+	// print_vm_area_struct(my_mm->mmap);
 	print_pgd_table(my_mm);
 	print_vm_area_details(my_mm);
 	printk("My_pid is %lu\n", my_pid);
