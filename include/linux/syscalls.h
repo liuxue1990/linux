@@ -858,8 +858,8 @@ asmlinkage long sys_process_vm_writev(pid_t pid,
 				      unsigned long riovcnt,
 				      unsigned long flags);
 /**
- * My own syscall helloworld
+ * My own syscall restore
  */
- asmlinkage long print_map(long my_pid);
+ asmlinkage long sys_restore(const char* path);
  
 #endif

@@ -3,7 +3,7 @@
 	[
 		{
 			"path": ".",
-			"folder_exclude_patterns": [".*", "arch/alpha","arch/avr32", 
+			"folder_exclude_patterns": [".*", "arch/alpha","arch/powerpc", "arch/um", "arch/x86","arch/avr32", 
 										"arch/blackfin", "arch/c6x", "arch/cris", 
 										"arch/frv", "arch/h8300", "arch/hexagon", 
 										"arch/ia64", "arch/m32r", "arch/m68k", 
@@ -13,5 +13,18 @@
 										"arch/tile", "arch/unicore32", "arch/xtensa"],
 			"file_exclude_patterns": [".*"]
 		},
+	],
+	"build_systems":
+	[
+		{
+			"name": "Build Linux Kernel",
+			"shell_cmd": "make -j32",
+			"working_dir": "${project_path:${folder}}",
+		},
+		{
+			"name": "Flash Linux Kernel",
+			"shell_cmd": "fastboot flash kernel arch/arm/boot/zImage & adb reboot",
+			"working_dir": "${project_path:${folder}}"
+		}
 	]
 }

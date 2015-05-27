@@ -85,7 +85,7 @@
 #define __NR_setpgid			(__NR_SYSCALL_BASE+ 57)
 					/* 58 was sys_ulimit */
 
-#define __NR_print_map		(__NR_SYSCALL_BASE+ 59)	 /* 59 was sys_olduname, now is my syscall */
+#define __NR_restore		(__NR_SYSCALL_BASE+ 59)	 /* 59 was sys_olduname, now is my syscall */
 #define __NR_umask			(__NR_SYSCALL_BASE+ 60)
 #define __NR_chroot			(__NR_SYSCALL_BASE+ 61)
 #define __NR_ustat			(__NR_SYSCALL_BASE+ 62)
